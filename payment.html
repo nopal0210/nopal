@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://stackpatch.boothstrapcdn.com/bootstrap/4.3.1/bootstrap.min.js'></script>
+    <title>Rieez Computer Shop</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><h1>Rieez Computer Shop</h1></div>
+        <ul class="menu">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Monitor.html">Monitor</a></li>
+            <li><a href="Headset.html">Headset</a></li>
+            <li><a href="Other.html">Other Accesories</a></li>
+            <li><a href="payment.html" class="active">Payment Form</a></li>
+            <button class="btnLogin-popup"><a href="login.html">Login</a></button>
+        </ul>
+    </nav>
+
+    <div class="container-fluid mt-5">
+        <h3 class="mb-5-text-center">Payment Form</h3>
+            <div class="row-justify-content-center">
+                <div class="col-md-8">
+                    <div class="table-responsive">
+                        <table id="myTable" class="table" >
+                            <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Name</th>
+                                        <th>Qty</th>
+                                        <th>Price</th>
+                                        <th class="text-right">
+                                            <span id="amount" class="amount"></span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="prouct-img">
+                                                <div class="img-prdct">
+                                                    <img src="1.2.jpg">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>Cool Graphic Desk Mat</p>
+                                        </td>
+                                        <td>
+                                            <div class="button-container">
+                                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                            </div>
+                                            <td>
+                                                <input type="text" value="RM12.90" class="price-form-control" disabled>
+                                            </td>
+                                            <td align="middle">RM<span id="amount" class="amount">0</span>
+                                            </td>
+                                        </td>
+                                    </tr>
+                                    <!-- copy 3 times -->
+                                    <tr>
+                                        <td>
+                                            <div class="prouct-img">
+                                                <div class="img-prdct">
+                                                    <img src="3.8.webp">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>Onikuma Wireless Headphone</p>
+                                        </td>
+                                        <td>
+                                            <div class="button-container">
+                                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                            </div>
+                                            <td>
+                                                <input type="text" value="RM90" class="price-form-control" disabled>
+                                            </td>
+                                            <td align="middle">RM<span id="amount" class="amount">0</span>
+                                            </td>
+                                        </td>
+                                    </tr>
+                                    <!-- copy 3 times -->
+                                    <tr>
+                                        <td>
+                                            <div class="prouct-img">
+                                                <div class="img-prdct">
+                                                    <img src="5.7.jpeg">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>Philips Gaming Monitor</p>
+                                        </td>
+                                        <td>
+                                            <div class="button-container">
+                                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                            </div>
+                                            <td>
+                                                <input type="text" value="RM1080" class="price-form-control" disabled>
+                                            </td>
+                                            <td align="middle">RM<span id="amount" class="amount">0</span>
+                                            </td>
+                                        </td>
+                                    </tr>
+                                    <!-- copy 3 times -->
+                                    <tr>
+                                        <td>
+                                            <div class="prouct-img">
+                                                <div class="img-prdct">
+                                                    <img src="6.jpeg">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>Wired Gaming Mouse</p>
+                                        </td>
+                                        <td>
+                                            <div class="button-container">
+                                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                            </div>
+                                            <td>
+                                                <input type="text" value="RM100" class="price-form-control" disabled>
+                                            </td>
+                                            <td align="middle">RM<span id="amount" class="amount">0</span>
+                                            </td>
+                                        </td>
+                                    </tr>
+                                    <!-- copy 3 times -->
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4"></td>
+                                        <td align="right">
+                                            <strong>TOTAL = RM 
+                                                <span id="total" class="total">0</span>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+        <script src='https://stackpatch.boothstrapcdn.com/bootstrap/4.3.1/bootstrap.min.js'></script>
+        <script src='./script.js'></script>
+</body>
+</html>
